@@ -1,0 +1,32 @@
+#galeria{
+    grid-area: galeria;
+    display: grid;
+    width: 100%;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    //grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;   
+  
+    justify-items: center;
+
+    figure{
+        overflow: hidden;
+
+        width: 100%;
+
+        border-radius: 5px;
+        box-shadow: 2px 3px 5px 1px rgba(172, 168, 168, 0.877);
+
+        transition: all 500ms ease-in-out;
+
+        &:hover{
+            filter: brightness(0.7);
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

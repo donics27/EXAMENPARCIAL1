@@ -1,0 +1,18 @@
+//Displays
+@mixin setFlex ($dir, $aligH: center, $aligV:center){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+
+    @if ($dir == column){
+        align-content: $aligH;
+        justify-content: $aligV;
+    } @else{
+        align-content: $aligV;
+        justify-content: $aligH;
+    }
+}
+
+.leftSide{
+    background-color: getColorsBase('primary', 3);
+}

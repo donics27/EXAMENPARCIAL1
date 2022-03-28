@@ -1,0 +1,10 @@
+#formulario{
+    grid-area: formulario;
+    @include setFlex(column);
+    padding-bottom: 1rem;
+
+    div.controlForms{
+        padding: 0.5rem 0%;
+        text-align: center;
+    }
+}

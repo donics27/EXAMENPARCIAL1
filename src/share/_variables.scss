@@ -1,0 +1,31 @@
+$unit: 10px;
+//Color de Texto
+$colorBase: ('primary': #000 #fff aqua, 'secondary': #fff #000 #fff);
+$palleta: 'primary' darkblue, 'success' darkgreen, 'warning' orange, 'danger' red, 'info' gray, 'dark' #000, 'light' #fff;
+$fontSettings: ('small': normal normal 1.5, 'medium': 400 condensed 2.5, 'large': bold normal 4,'big': bolder expanded 4.5);
+
+/* Fuentes Externas**/
+@font-face {
+    font-family: art-history-book;
+    src: url('../fuentes/art_history_book/ART\ HISTORY\ BOOK.otf');
+}
+
+@font-face {
+    font-family: sketchzone;
+    src: url('../fuentes/sketchzone/Sketchzone.otf');
+}
+
+@font-face {
+    font-family: alphaWood;
+    src: url('../fuentes/alpha_wood/AlphaWood.ttf');
+}
+
+@font-face {
+    font-family: dcc;
+    src: url('../fuentes/dcc_ash/DCC\ -\ Ash.otf');
+}
+
+@font-face {
+    font-family: craker;
+    src: url('../fuentes/crackvetica/Crackvetica.ttf');
+}
