@@ -20,6 +20,7 @@
        
         &-#{$keyName}{         
             @extend %tituloBase;
+            margin: 0.5rem;
             font-size: $unit * nth($fontVals,3);
             font-weight: nth($fontVals, 1);
             font-stretch:nth($fontVals, 2);            
@@ -51,4 +52,6 @@
 
 .texto{
     font-size: 1.4rem;
+    padding: 1rem;
+    margin: 1rem;
 }

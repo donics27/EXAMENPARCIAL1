@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="public/css/inicio.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <script>
+        document.oncontextmenu = function(){
+            return false;
+        }
+    </script>
 
 </head>
 <body> 
@@ -16,6 +20,7 @@
     <header id="banner"  class="leftSide" >
         <h1 class="tit tit-big">arte visual</h1>
         <p class="tit-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti doloribus qui culpa veniam odit iusto impedit in nihil esse?</p>
+        <p class="tit-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laudantium veniam corrupti inventore reiciendis, doloribus vitae placeat, consectetur iste ratione sapiente nesciunt temporibus a autem quos non distinctio? Quia, modi?</p>
         <p class="tit-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laudantium veniam corrupti inventore reiciendis, doloribus vitae placeat, consectetur iste ratione sapiente nesciunt temporibus a autem quos non distinctio? Quia, modi?</p>
         <a href="#galeria" class="btn btn-warning">Ir a galaría</a>
     </header>
@@ -73,6 +78,7 @@
    
     <section id="info3">
         <p class="texto"> <strong> <span class="tit-medium"> Nuestros Clientes</span></strong> ipsum dolor sit amet consectetur adipisicing elit. Fugit veniam iusto voluptatum esse dolorem culpa obcaecati error aut quae et, eaque quam, architecto, accusantium ab aperiam perferendis. Nam, illum error!</p>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quis deserunt nulla, tempora vel laudantium amet odit veniam, assumenda autem iste debitis similique ut atque dicta laboriosam minima ipsum unde?</p>
     </section>
     <section id="galeria">
         <figure><img src="public/images/paisaje1.jpg" alt=""></figure>
@@ -88,7 +94,7 @@
             <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
             <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico">
         </div>        
-        <textarea name="comentario" id="comentario" cols="40" rows="6" placeholder="Dejar su comentario"></textarea>
+        <textarea name="comentario" id="comentario" cols="40" rows="4" placeholder="Dejar su comentario"></textarea>
         <div class="controlForms">
             <button type="submit" class="btn btn-danger">Enviar</button>
             <button type="reset" class="btn btn-primary">Cancelar</button>

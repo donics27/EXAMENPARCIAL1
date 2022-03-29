@@ -212,24 +212,28 @@ i:hover {
 }
 
 .tit-small {
+  margin: 0.5rem;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
 }
 
 .tit-medium {
+  margin: 0.5rem;
   font-size: 25px;
   font-weight: 400;
   font-stretch: condensed;
 }
 
 .tit-large {
+  margin: 0.5rem;
   font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
 }
 
 .tit-big {
+  margin: 0.5rem;
   font-size: 45px;
   font-weight: bolder;
   font-stretch: expanded;
@@ -363,6 +367,8 @@ i:hover {
 
 .texto {
   font-size: 1.4rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 #formulario {
@@ -387,12 +393,37 @@ i:hover {
 }
 
 #formulario div.controlForms {
-  padding: 0.5rem 0%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem 0%;
+  width: 90%;
+}
+
+#formulario div.controlForms input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 48%;
+}
+
+#formulario textarea {
+  width: 90%;
+  margin: auto;
 }
 
 #galeria {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: galeria;
@@ -400,7 +431,7 @@ i:hover {
   display: grid;
   width: 100%;
   grid-auto-flow: dense;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
   padding: 0.5rem;
   justify-items: center;
@@ -446,7 +477,7 @@ body {
   grid-auto-flow: dense;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "banner  imgPrincipal"  "info1    galeria"                         "menuBar  galeria" "info2    info3" "info2  formulario";
+      grid-template-areas: "banner  imgPrincipal"  "info1    info3"                         "menuBar  galeria" "info2    galeria" "info2  formulario";
 }
 
 #banner {
@@ -470,7 +501,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
 }
 
 #imgPrincipal {
@@ -511,7 +542,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -523,7 +554,7 @@ body {
   -ms-grid-column: 1;
   grid-area: info2;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 #info2 p {
@@ -532,10 +563,10 @@ body {
 }
 
 #info3 {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: info3;
-  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
@@ -544,5 +575,45 @@ body {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
         grid-template-areas: "banner" "imgPrincipal"                               "info1" "galeria"                         "menuBar" "info3" "info2" "formulario";
+  }
+  #banner {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: banner;
+  }
+  #imgPrincipal {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: imgPrincipal;
+  }
+  #info1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: info1;
+  }
+  #info2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: info2;
+  }
+  #info3 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: info3;
+  }
+  #galeria {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: galeria;
+  }
+  #formulario {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: formulario;
+  }
+  #menuBar {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: menuBar;
   }
 }
