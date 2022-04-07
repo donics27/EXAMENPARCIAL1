@@ -1,43 +1,102 @@
-/* Fuentes Externas**/
-@font-face {
-  font-family: art-history-book;
-  src: url("../fuentes/art_history_book/ART HISTORY BOOK.otf");
-}
-
-@font-face {
-  font-family: sketchzone;
-  src: url("../fuentes/sketchzone/Sketchzone.otf");
-}
-
-@font-face {
-  font-family: alphaWood;
-  src: url("../fuentes/alpha_wood/AlphaWood.ttf");
-}
-
-@font-face {
-  font-family: dcc;
-  src: url("../fuentes/dcc_ash/DCC - Ash.otf");
-}
-
-@font-face {
-  font-family: craker;
-  src: url("../fuentes/crackvetica/Crackvetica.ttf");
-}
 
 .leftSide {
-  background-color: aqua;
+  background-image: url(https://thumbs.dreamstime.com/z/fondo-pesado-de-la-tela-del-brocado-22705012.jpg);
 }
 
-#menuBar {
+#relleno {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: relleno;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+#relleno div.formas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem 0%;
+  width: 100%;
+}
+
+#relleno div.formas input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+}
+
+#relleno textarea {
+  width: 90%;
+  margin: auto;
+}
+
+#fotos {
   -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: fotos;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-auto-flow: dense;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+  justify-items: center;
+}
+
+#fotos figure {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 4px 6px 2px rgba(121, 121, 121, 0.877);
+          box-shadow: 3px 4px 6px 2px rgba(121, 121, 121, 0.877);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#fotos figure:hover {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+#fotos figure img {
+  width: 100%;
+  height: 100%;
+}
+
+#claus {
   grid-area: menuBar;
   background-color: aqua;
   text-align: center;
   padding: 1rem;
 }
 
-#menuBar .menu {
+#claus .menu {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,19 +116,19 @@
           align-items: flex-start;
 }
 
-#menuBar .menu .menu-opt {
+#claus .menu .menu-opt {
   padding: 2.5px;
   width: 95%;
 }
 
-#menuBar .menu .menu-opt .menu-link {
+#claus .menu .menu-opt .menu-link {
   display: inline-block;
   font-size: 1.75rem;
   width: 95%;
   text-align: left;
 }
 
-#menuBar .menu .menu-opt .subMenu {
+#claus .menu .menu-opt .Subclaus {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +146,7 @@
           justify-content: space-evenly;
 }
 
-#menuBar .menu .menu-opt .subMenu li a {
+#claus .menu .menu-opt .Subclaus li a {
   font-size: 2rem;
 }
 
@@ -103,7 +162,7 @@ i {
 }
 
 i:hover {
-  color: red;
+  color: #0580d3;
 }
 
 .btn {
@@ -371,92 +430,6 @@ i:hover {
   margin: 1rem;
 }
 
-#formulario {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: formulario;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 1rem;
-}
-
-#formulario div.controlForms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 1rem 0%;
-  width: 90%;
-}
-
-#formulario div.controlForms input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 48%;
-}
-
-#formulario textarea {
-  width: 90%;
-  margin: auto;
-}
-
-#galeria {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: galeria;
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  grid-auto-flow: dense;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
-  padding: 0.5rem;
-  justify-items: center;
-}
-
-#galeria figure {
-  overflow: hidden;
-  width: 100%;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 3px 5px 1px rgba(172, 168, 168, 0.877);
-          box-shadow: 2px 3px 5px 1px rgba(172, 168, 168, 0.877);
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-#galeria figure:hover {
-  -webkit-filter: brightness(0.7);
-          filter: brightness(0.7);
-}
-
-#galeria figure img {
-  width: 100%;
-  height: 100%;
-}
-
 * {
   position: relative;
   margin: 0%;
@@ -477,13 +450,17 @@ body {
   grid-auto-flow: dense;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-      grid-template-areas: "banner  imgPrincipal"  "info1    info3"                         "menuBar  galeria" "info2    galeria" "info2  formulario";
+      grid-template-areas: "reno  imgPrincipal" 
+ "Bell1  Bell3"                        
+ "claus1  fotos"
+ "Bell2   fotos"
+ "Bell2  relleno";
 }
 
-#banner {
+#reno {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: banner;
+  grid-area: reno;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,30 +481,10 @@ body {
   padding: 0.5rem 2rem;
 }
 
-#imgPrincipal {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: imgPrincipal;
-  text-align: center;
-}
-
-#imgPrincipal img {
-  width: 100%;
-  -webkit-filter: opacity(1);
-          filter: opacity(1);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-#imgPrincipal img:hover {
-  -webkit-filter: opacity(0.8);
-          filter: opacity(0.8);
-}
-
-#info1 {
+#Bell1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: info1;
+  grid-area: Bell1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,72 +505,100 @@ body {
           align-items: center;
 }
 
-#info2 {
+#Bell2 {
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  grid-area: info2;
+  grid-area: Bell2;
   text-align: center;
   padding: 1rem 2rem;
 }
 
-#info2 p {
+#Bell2 p {
   text-align: justify;
   padding: 0.5rem;
 }
 
-#info3 {
+#Bell3 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: info3;
+  grid-area: Bell3;
   padding: 1rem 2rem;
   text-align: center;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: px) {
   body {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        grid-template-areas: "banner" "imgPrincipal"                               "info1" "galeria"                         "menuBar" "info3" "info2" "formulario";
+        grid-template-areas: "reno"
+ "imgPrincipal"                              
+ "Bell1"
+ "fotos"                        
+ "claus1"
+ "Bell3"
+ "Bell2"
+ "relleno";
   }
-  #banner {
+  #reno {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    grid-area: banner;
+    grid-area: reno;
   }
   #imgPrincipal {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: imgPrincipal;
   }
-  #info1 {
+  #Bell1 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    grid-area: info1;
+    grid-area: Bell1;
   }
-  #info2 {
+  #Bell2 {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
-    grid-area: info2;
+    grid-area: Bell2;
   }
-  #info3 {
+  #Bell3 {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
-    grid-area: info3;
+    grid-area: Bell3;
   }
-  #galeria {
+  #fotos {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
-    grid-area: galeria;
+    grid-area: fotos;
   }
-  #formulario {
+  #relleno {
     -ms-grid-row: 8;
     -ms-grid-column: 1;
-    grid-area: formulario;
+    grid-area: relleno;
   }
-  #menuBar {
+  #claus1 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
-    grid-area: menuBar;
+    grid-area: claus1;
   }
 }
+
+#imgPrincipal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imgPrincipal;
+  text-align: center;
+}
+
+#imgPrincipal img {
+  width: 100%;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#imgPrincipal img:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+/*# sourceMappingURL=inicio.css.map */
